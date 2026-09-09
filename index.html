@@ -66,7 +66,6 @@ div[style*="overflow-x:auto"]{
   grid-template-columns:repeat(3,1fr);
   gap:6px;
   width:100%;
-  margin-bottom:10px;
 }
 
 .main-poster{
@@ -87,9 +86,14 @@ div[style*="overflow-x:auto"]{
 }
 
 .visual-last-text{
+  grid-column:span 2;
   width:100%;
+  min-width:0;
   box-sizing:border-box;
   padding:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
   font-size:11px;
   line-height:1.5;
@@ -167,13 +171,15 @@ div[style*="overflow-x:auto"]{
       <img src="images/IMG_4282.jpeg" alt="">
     </a>
 
-  </div>
+    <div class="visual-last-text">
+      <div>
+        <strong>10주년 기념 프로젝트의 시작</strong><br>
+        DAY6의 음악 여정을 톺아볼 수 있는 콘텐츠<br>
+        공개일 25.08.09. ~ 08.12.<br><br>
+        * 카드를 선택하면 상세 페이지로 이동합니다.
+      </div>
+    </div>
 
-  <div class="visual-last-text">
-    <strong>10주년 기념 프로젝트의 시작</strong><br>
-    DAY6의 음악 여정을 톺아볼 수 있는 콘텐츠<br>
-    공개일 25.08.09. ~ 08.12.<br><br>
-    * 카드를 선택하면 상세 페이지로 이동합니다.<br>
   </div>
 
 </div>
