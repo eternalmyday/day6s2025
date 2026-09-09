@@ -157,6 +157,45 @@ div[style*="overflow-x:auto"]{
 }
 
 
+/* POP-UP */
+
+.popup-scroll{
+  width:100%;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+
+.popup-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+.popup-slide{
+  flex:0 0 100%;
+  min-width:0;
+  scroll-snap-align:start;
+}
+
+.popup-section-title{
+  color:#70C9B7;
+}
+
+.popup-line-1{
+  display:inline-block;
+  font-size:15px;
+  font-weight:700;
+}
+
+.popup-line-2{
+  display:inline-block;
+  font-size:13px;
+  font-weight:400;
+}
+
+
 /* DAY6.zip */
 
 .zip-box{
@@ -168,27 +207,6 @@ div[style*="overflow-x:auto"]{
   overflow:hidden;
 }
 
-.zip-header{
-  width:100%;
-  padding:9px 10px 10px;
-  box-sizing:border-box;
-  background:#FDFEBC;
-  text-align:center;
-  color:#70C9B7;
-  line-height:1.25;
-}
-
-.zip-title{
-  font-size:18px;
-  font-weight:700;
-}
-
-.zip-subtitle{
-  margin-top:3px;
-  font-size:13px;
-  font-weight:700;
-}
-
 .zip-image{
   width:100%;
   height:auto;
@@ -196,21 +214,14 @@ div[style*="overflow-x:auto"]{
 }
 
 .zip-info{
-  padding:9px 12px 10px;
+  padding:9px 12px;
   box-sizing:border-box;
   text-align:center;
   background:#FDFEBC;
   border-top:1px solid #70C9B7;
 }
 
-.zip-period{
-  font-size:11px;
-  line-height:1.5;
-  color:#555;
-}
-
 .zip-links{
-  margin-top:7px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -220,7 +231,9 @@ div[style*="overflow-x:auto"]{
 .zip-links a{
   width:18px;
   height:18px;
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   line-height:0;
 }
 
@@ -232,8 +245,8 @@ div[style*="overflow-x:auto"]{
 }
 
 .zip-x-icon{
-  width:18px;
-  height:18px;
+  width:15px;
+  height:15px;
   display:block;
   background:#70C9B7;
   -webkit-mask:url("images/x.svg") center/contain no-repeat;
@@ -241,8 +254,8 @@ div[style*="overflow-x:auto"]{
 }
 
 .zip-message{
-  width:90%;
-  margin:10px auto 24px;
+  width:82%;
+  margin:10px auto 0;
   box-sizing:border-box;
   display:flex;
   align-items:stretch;
@@ -251,8 +264,8 @@ div[style*="overflow-x:auto"]{
 }
 
 .zip-message-bar{
-  width:20px;
-  flex:0 0 20px;
+  width:18px;
+  flex:0 0 18px;
   background:#FDFEBC;
   border-right:1px solid #70C9B7;
   box-sizing:border-box;
@@ -261,11 +274,29 @@ div[style*="overflow-x:auto"]{
 .zip-message-text{
   flex:1;
   min-width:0;
-  padding:14px 18px;
+  padding:13px 15px;
   box-sizing:border-box;
   color:#262626;
   font-size:12px;
   line-height:1.8;
+}
+
+
+/* 꿈의 버스 */
+
+.dreambus-box{
+  width:100%;
+  box-sizing:border-box;
+  border:2px solid #D4A4A2;
+  border-radius:14px;
+  background:#FFFFFF;
+  overflow:hidden;
+}
+
+.dreambus-box img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 
@@ -459,6 +490,7 @@ div[style*="overflow-x:auto"]{
 
 <div class="section-title">
   데식은 10살<br>
+
   <span
     class="small-title"
     id="desik-current-title">
@@ -587,7 +619,6 @@ div[style*="overflow-x:auto"]{
     </iframe>
   </div>
 
-
 </div>
 
 <div class="slide-count" id="liveclip-count">
@@ -596,84 +627,114 @@ div[style*="overflow-x:auto"]{
 
 
 
-<!-- DAY6.zip -->
+<!-- POP-UP -->
 
-<div class="section-title">
-  DAY6.zip
-</div>
+<div class="section-title popup-section-title">
 
-<div class="zip-box">
+  <span
+    id="popup-current-title"
+    class="popup-line-1">
+    DAY6.zip
+  </span><br>
 
-  <div class="zip-header">
-
-    <div class="zip-title">
-      DAY6.zip
-    </div>
-
-    <div class="zip-subtitle">
-      : The Home of Our Decade
-    </div>
-
-  </div>
-
-  <img
-    src="images/DAY6.zip-Poster.png"
-    alt="DAY6.zip : The Home of Our Decade"
-    class="zip-image">
-
-  <div class="zip-info">
-
-    <div class="zip-period">
-      운영기간
-    </div>
-
-    <div class="zip-links">
-
-      <a
-        href="https://x.com/day6official/status/1959903578933657797"
-        target="_blank"
-        rel="noreferrer noopener"
-        aria-label="X">
-        <span class="zip-x-icon"></span>
-      </a>
-
-      <a
-        href="https://naver.me/5xaLH5Mh"
-        target="_blank"
-        rel="noreferrer noopener"
-        aria-label="Naver Map">
-        <img
-          src="images/NaverMap.png"
-          alt="Naver Map">
-      </a>
-
-      <a
-        href="https://linktr.ee/day6.zip"
-        target="_blank"
-        rel="noreferrer noopener"
-        aria-label="Linktree">
-        <img
-          src="images/Linktree.svg"
-          alt="Linktree">
-      </a>
-
-    </div>
-
-  </div>
+  <span
+    id="popup-current-subtitle"
+    class="popup-line-2">
+    : The Home of Our Decade
+  </span>
 
 </div>
 
 
-<div class="zip-message">
+<div class="popup-scroll" id="popup-scroll">
 
-  <div class="zip-message-bar">
+
+  <!-- 1 DAY6.zip -->
+
+  <div class="popup-slide">
+
+    <div class="zip-box">
+
+      <img
+        src="images/DAY6.zip-Poster.jpeg"
+        alt="DAY6.zip : The Home of Our Decade"
+        class="zip-image">
+
+      <div class="zip-info">
+
+        <div class="zip-links">
+
+          <a
+            href="https://x.com/day6official/status/1959903578933657797"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="X">
+            <span class="zip-x-icon"></span>
+          </a>
+
+          <a
+            href="https://naver.me/5xaLH5Mh"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Naver Map">
+            <img
+              src="images/NaverMap.png"
+              alt="Naver Map">
+          </a>
+
+          <a
+            href="https://linktr.ee/day6.zip"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Linktree">
+            <img
+              src="images/Linktree.svg"
+              alt="Linktree">
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="zip-message">
+
+      <div class="zip-message-bar">
+      </div>
+
+      <div class="zip-message-text">
+        DAY6와 My Day가 함께 만든 우리만의 공간 🏡 🩵<br>
+        <strong>DAY6.zip</strong>으로 My Day를 초대합니다 𖤐
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="zip-message-text">
-    DAY6와 My Day가 함께 만든 우리만의 공간 🏡 🩵<br>
-    <strong>DAY6.zip</strong>으로 My Day를 초대합니다 𖤐
+
+
+  <!-- 2 꿈의 버스 -->
+
+  <div class="popup-slide">
+
+    <div class="dreambus-box">
+
+      <img
+        src="images/DreamBus-Poster.jpeg"
+        alt="DAY6가 운영하는 꿈의 버스">
+
+    </div>
+
   </div>
 
+
+</div>
+
+
+<div class="slide-count" id="popup-count">
+  1 / 2
 </div>
 
 
@@ -684,93 +745,97 @@ div[style*="overflow-x:auto"]{
   DAY6 FOUREVER
 </div>
 
-<div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
+<div class="section-card">
 
-  <a
-    href="https://x.com/day6official/status/2096614524631830927"
-    target="_blank"
-    rel="noreferrer noopener"
-    style="text-decoration:none;color:rgb(51,51,51);">
+  <div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
 
-    💌 [To. My Day]<br>
-    깜짝 선물이 도착했습니다🎁<br>
-    11살 기념 DAY6 가족사진, My Day 마음에 쏙 들기를✨<br><br>
-    #DAY6 #데이식스<br>
-    #DAY6_11th_Anniversary
+    <a
+      href="https://x.com/day6official/status/2096614524631830927"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
 
-  </a>
+      💌 [To. My Day]<br>
+      깜짝 선물이 도착했습니다🎁<br>
+      11살 기념 DAY6 가족사진, My Day 마음에 쏙 들기를✨<br><br>
+      #DAY6 #데이식스<br>
+      #DAY6_11th_Anniversary
 
-</div>
+    </a>
+
+  </div>
 
 
-<div style="width:100%;overflow-x:auto;white-space:nowrap;margin-top:10px;">
+  <div style="width:100%;overflow-x:auto;white-space:nowrap;margin-top:10px;">
 
-  <a
-    href="https://youtube.com/shorts/ASSRx03COS0"
-    target="_blank"
-    rel="noreferrer noopener">
+    <a
+      href="https://youtube.com/shorts/ASSRx03COS0"
+      target="_blank"
+      rel="noreferrer noopener">
 
-    <img
-      src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-  </a>
+    </a>
+
+  </div>
 
 </div>
 
@@ -782,52 +847,56 @@ div[style*="overflow-x:auto"]{
   LIVE Notice
 </div>
 
-<div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
+<div class="section-card">
 
-  <a
-    href="https://x.com/day6official/status/2096970905406865412"
-    target="_blank"
-    rel="noreferrer noopener"
-    style="text-decoration:none;color:rgb(51,51,51);">
+  <div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
 
-    DAY6 11th Anniversary Live🥳<br>
-    11번째 생일맞이 홈파티 준비 완료!🏠✨<br><br>
+    <a
+      href="https://x.com/day6official/status/2096970905406865412"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
 
-    잠시 후 시작되는 DAY6만의 특별한 홈파티에서<br>
-    My Day를 설레는 마음으로 기다리고 있을게요(*˘▿˘✽)<br><br>
+      DAY6 11th Anniversary Live🥳<br>
+      11번째 생일맞이 홈파티 준비 완료!🏠✨<br><br>
 
-    📍26.09.07 (MON) 09:07 PM (KST)
+      잠시 후 시작되는 DAY6만의 특별한 홈파티에서<br>
+      My Day를 설레는 마음으로 기다리고 있을게요(*˘▿˘✽)<br><br>
 
-  </a>
+      📍26.09.07 (MON) 09:07 PM (KST)
 
-  <br><br>
+    </a>
 
-  <a
-    href="https://youtube.com/live/etcA8OjEV6s"
-    target="_blank"
-    rel="noreferrer noopener"
-    style="text-decoration:none;color:#0099ff;">
-    youtu.be/live/etcA8OjEV6s
-  </a>
+    <br><br>
+
+    <a
+      href="https://youtube.com/live/etcA8OjEV6s"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:#0099ff;">
+      youtu.be/live/etcA8OjEV6s
+    </a>
+
+  </div>
+
+
+  <p style="text-align:center;margin:10px 0 0;">
+
+    <a
+      href="https://youtube.com/live/etcA8OjEV6s"
+      target="_blank"
+      rel="noreferrer noopener">
+
+      <img
+        src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&amp;name=large"
+        alt=""
+        style="width:63%;height:auto;display:block;margin:0 auto;border-radius:0.7vw;">
+
+    </a>
+
+  </p>
 
 </div>
-
-
-<p style="text-align:center;margin:10px 0 0;">
-
-  <a
-    href="https://youtube.com/live/etcA8OjEV6s"
-    target="_blank"
-    rel="noreferrer noopener">
-
-    <img
-      src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&amp;name=large"
-      alt=""
-      style="width:63%;height:auto;display:block;margin:0 auto;border-radius:0.7vw;">
-
-  </a>
-
-</p>
 
 
 
@@ -837,44 +906,48 @@ div[style*="overflow-x:auto"]{
   [ #DAY6_BEHIND ]
 </div>
 
-<div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
+<div class="section-card">
 
-  <a
-    href="https://x.com/day6official/status/2096970905406865412"
-    target="_blank"
-    rel="noreferrer noopener"
-    style="text-decoration:none;color:rgb(51,51,51);">
+  <div style="width:90%;max-width:650px;margin:0 auto;font-size:11px;line-height:1.6;">
 
-    DAY6의 11번째 생일맞이 홈파티<br><br>
+    <a
+      href="https://x.com/day6official/status/2096970905406865412"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
 
-    &lt;Welcome to the Party&gt;에서<br>
-    다시금 열어 본 선물같은 시간들 💝<br>
-    그 시간들에 항상 옆에 있어줘서 고마워요<br>
-    앞으로도 함께 걸어가 줘요 My Day( ˘ ³˘) ❤️
+      DAY6의 11번째 생일맞이 홈파티<br><br>
 
-  </a>
+      &lt;Welcome to the Party&gt;에서<br>
+      다시금 열어 본 선물같은 시간들 💝<br>
+      그 시간들에 항상 옆에 있어줘서 고마워요<br>
+      앞으로도 함께 걸어가 줘요 My Day( ˘ ³˘) ❤️
 
-</div>
+    </a>
+
+  </div>
 
 
-<div style="width:100%;overflow-x:auto;white-space:nowrap;margin-top:10px;text-align:center;">
+  <div style="width:100%;overflow-x:auto;white-space:nowrap;margin-top:10px;text-align:center;">
 
-  <a
-    href="https://youtube.com/shorts/ASSRx03COS0"
-    target="_blank"
-    rel="noreferrer noopener">
+    <a
+      href="https://youtube.com/shorts/ASSRx03COS0"
+      target="_blank"
+      rel="noreferrer noopener">
 
-    <img
-      src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <img
-      src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&amp;name=4096x4096"
-      alt=""
-      style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&amp;name=4096x4096"
+        alt=""
+        style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-  </a>
+    </a>
+
+  </div>
 
 </div>
 
@@ -1022,6 +1095,143 @@ setupVideoSlider(
     "한 페이지가 될 수 있게"
   ]
 );
+
+
+
+/* POP-UP */
+
+const popupScroll =
+  document.getElementById("popup-scroll");
+
+const popupTitle =
+  document.getElementById("popup-current-title");
+
+const popupSubtitle =
+  document.getElementById("popup-current-subtitle");
+
+const popupCount =
+  document.getElementById("popup-count");
+
+
+const popupData = [
+  {
+    title:"DAY6.zip",
+    subtitle:": The Home of Our Decade",
+    color:"#70C9B7",
+    titleSize:"15px",
+    titleWeight:"700",
+    subtitleSize:"13px",
+    subtitleWeight:"400"
+  },
+  {
+    title:"DAY6가 운영하는",
+    subtitle:"꿈의 버스",
+    color:"#D4A4A2",
+    titleSize:"13px",
+    titleWeight:"400",
+    subtitleSize:"15px",
+    subtitleWeight:"700"
+  }
+];
+
+
+let popupTimer;
+
+
+function updatePopup(){
+
+  const slides =
+    popupScroll.querySelectorAll(".popup-slide");
+
+  const scrollRect =
+    popupScroll.getBoundingClientRect();
+
+  let closestIndex = 0;
+  let closestDistance = Infinity;
+
+
+  slides.forEach(function(slide,index){
+
+    const slideRect =
+      slide.getBoundingClientRect();
+
+    const distance =
+      Math.abs(
+        slideRect.left -
+        scrollRect.left
+      );
+
+
+    if(distance < closestDistance){
+
+      closestDistance =
+        distance;
+
+      closestIndex =
+        index;
+
+    }
+
+  });
+
+
+  popupTitle.textContent =
+    popupData[closestIndex].title;
+
+  popupSubtitle.textContent =
+    popupData[closestIndex].subtitle;
+
+
+  popupTitle.style.color =
+    popupData[closestIndex].color;
+
+  popupSubtitle.style.color =
+    popupData[closestIndex].color;
+
+
+  popupTitle.style.fontSize =
+    popupData[closestIndex].titleSize;
+
+  popupTitle.style.fontWeight =
+    popupData[closestIndex].titleWeight;
+
+
+  popupSubtitle.style.fontSize =
+    popupData[closestIndex].subtitleSize;
+
+  popupSubtitle.style.fontWeight =
+    popupData[closestIndex].subtitleWeight;
+
+
+  popupCount.textContent =
+    (closestIndex + 1) +
+    " / " +
+    slides.length;
+
+}
+
+
+if(popupScroll){
+
+  popupScroll.addEventListener(
+    "scroll",
+    function(){
+
+      clearTimeout(popupTimer);
+
+      popupTimer =
+        setTimeout(
+          updatePopup,
+          30
+        );
+
+    }
+  );
+
+
+  updatePopup();
+
+}
 
 </script>
 
