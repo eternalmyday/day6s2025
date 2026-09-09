@@ -196,15 +196,17 @@ div[style*="overflow-x:auto"]{
 }
 
 .zip-info{
-  padding:10px 12px 11px;
+  padding:9px 12px 10px;
   box-sizing:border-box;
   text-align:center;
+  background:#FDFEBC;
+  border-top:1px solid #70C9B7;
 }
 
 .zip-period{
   font-size:11px;
   line-height:1.5;
-  color:#777;
+  color:#555;
 }
 
 .zip-links{
@@ -229,15 +231,23 @@ div[style*="overflow-x:auto"]{
   object-fit:contain;
 }
 
+.zip-x-icon{
+  width:18px;
+  height:18px;
+  display:block;
+  background:#70C9B7;
+  -webkit-mask:url("images/x.svg") center/contain no-repeat;
+  mask:url("images/x.svg") center/contain no-repeat;
+}
+
 .zip-message{
-  width:100%;
-  margin-top:10px;
+  width:90%;
+  margin:10px auto 24px;
   box-sizing:border-box;
   display:flex;
   align-items:stretch;
   background:#FFFFFF;
   border:2px solid #70C9B7;
-
 }
 
 .zip-message-bar{
@@ -607,13 +617,12 @@ div[style*="overflow-x:auto"]{
   </div>
 
   <img
-    src="images/DAY6.zip-Poster.jpeg"
+    src="images/DAY6.zip-Poster.png"
     alt="DAY6.zip : The Home of Our Decade"
     class="zip-image">
 
   <div class="zip-info">
 
-    <!-- 운영기간 실제 날짜 입력 -->
     <div class="zip-period">
       운영기간
     </div>
@@ -625,9 +634,7 @@ div[style*="overflow-x:auto"]{
         target="_blank"
         rel="noreferrer noopener"
         aria-label="X">
-        <img
-          src="images/x.svg"
-          alt="X">
+        <span class="zip-x-icon"></span>
       </a>
 
       <a
