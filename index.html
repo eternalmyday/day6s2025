@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>DAY6 Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">DAY6 ARCHIVE</a>
+    <nav class="nav">
+      <a href="#video">VIDEO</a>
+      <a href="#photo">PHOTO</a>
+      <a href="#behind">BEHIND</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <article class="post">
+
+    <header class="post-header">
+      <p class="kicker">ARCHIVE</p>
+      <h1>DAY6 11th Anniversary</h1>
+      <p class="date">2026.09.07</p>
+    </header>
+
+    <section class="section" id="video">
+      <div class="section-title">
+        <h2>LIVE Notice</h2>
+        <span>VIDEO</span>
+      </div>
+
+      <div class="youtube">
+        <iframe
+          src="https://www.youtube.com/embed/etcA8OjEV6s"
+          title="YouTube video player"
+          loading="lazy"
+          playsinline
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p class="caption">페이지 안에서 바로 재생되고, 플레이어의 전체화면 버튼도 사용할 수 있습니다.</p>
+    </section>
+
+    <section class="section" id="photo">
+      <div class="section-title">
+        <h2>PHOTO</h2>
+        <span>GALLERY</span>
+      </div>
+
+      <div class="photo-grid">
+        <button class="photo-button" data-index="0" aria-label="사진 1 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-1/900/1200" alt="예시 사진 1">
+        </button>
+        <button class="photo-button" data-index="1" aria-label="사진 2 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-2/1200/900" alt="예시 사진 2">
+        </button>
+        <button class="photo-button" data-index="2" aria-label="사진 3 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-3/900/1200" alt="예시 사진 3">
+        </button>
+        <button class="photo-button" data-index="3" aria-label="사진 4 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-4/1200/900" alt="예시 사진 4">
+        </button>
+        <button class="photo-button" data-index="4" aria-label="사진 5 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-5/900/1200" alt="예시 사진 5">
+        </button>
+        <button class="photo-button" data-index="5" aria-label="사진 6 크게 보기">
+          <img loading="lazy" src="https://picsum.photos/seed/day6-6/1200/900" alt="예시 사진 6">
+        </button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>WIDE PHOTO</h2>
+        <span>PHOTO</span>
+      </div>
+
+      <button class="single-photo photo-button" data-index="6" aria-label="가로 사진 크게 보기">
+        <img loading="lazy" src="https://picsum.photos/seed/day6-wide/1600/900" alt="예시 가로 사진">
+      </button>
+    </section>
+
+    <section class="section" id="behind">
+      <div class="section-title">
+        <h2>#DAY6_BEHIND</h2>
+        <span>BEHIND</span>
+      </div>
+
+      <p class="body-text">
+        카드가 계속 반복되는 느낌 대신, 긴 게시글처럼 콘텐츠가 자연스럽게 이어지도록 구성했습니다.
+        실제 사진과 영상만 바꿔 넣으면 그대로 사용할 수 있습니다.
+      </p>
+
+      <div class="links">
+        <a href="#" target="_blank" rel="noreferrer noopener">YouTube ↗</a>
+        <a href="#" target="_blank" rel="noreferrer noopener">Instagram ↗</a>
+        <a href="#" target="_blank" rel="noreferrer noopener">X ↗</a>
+      </div>
+    </section>
+
+  </article>
+</main>
+
+<div class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="닫기">×</button>
+  <button class="lightbox-prev" aria-label="이전 사진">‹</button>
+
+  <div class="lightbox-stage">
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-count"></div>
+  </div>
+
+  <button class="lightbox-next" aria-label="다음 사진">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
