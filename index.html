@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <title>DAY6</title>
+
 <style>
 html{
   -webkit-text-size-adjust:100%;
@@ -31,14 +32,8 @@ div[style*="overflow-x:auto"]{
   margin:0 auto;
   padding:0 12px;
   box-sizing:border-box;
-
 }
 
-.mobile-page > table{
-  width:100% !important;
-  max-width:100% !important;
-  margin:0 auto;
-}
 .section-title{
   margin:24px 0 10px;
   text-align:center;
@@ -49,28 +44,17 @@ div[style*="overflow-x:auto"]{
 .section-card{
   width:100%;
   margin:0 0 24px;
-padding:12px;
+  padding:12px;
   box-sizing:border-box;
-
   background:#fff;
-
-
-
   border-radius:14px;
-box-shadow:0 3px 10px rgba(70,110,140,0.16);
-
+  box-shadow:0 3px 10px rgba(70,110,140,0.16);
   overflow:hidden;
 }
 
-}
-@media(max-width:480px){
-  .mobile-page{
-    padding:0 10px;
-  }
-}
 .flip-grid{
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:6px;
   width:100%;
 }
@@ -121,17 +105,23 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
   text-align:center;
   font-size:10px;
   line-height:1.4;
-  background:#fff;
+  background:linear-gradient(135deg,#F7FBFE 0%,#EAF4FA 55%,#DFEEF7 100%);
+}
+
+@media(max-width:480px){
+  .mobile-page{
+    padding:0 10px;
+  }
 }
 </style>
 </head>
+
 <body>
-  <div class="mobile-page">
+
+<div class="mobile-page">
+
 <p>&nbsp;</p>
 
-
-
-    
 <iframe
   width="100%"
   src="https://www.youtube.com/embed/TAeFPCf__uA"
@@ -141,110 +131,115 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>
 </iframe>
+
+
 <div class="section-title">DAY6 FOUREVER</div>
 
 <div class="section-card">
-  <div style="width:90%;max-width:650px;font-size:11px;">
-    <div style="padding:2px 3px;">
-<div class="flip-grid">
+  <div class="flip-grid">
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4273.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4273.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 1</div>
       </div>
-      <div class="flip-back">텍스트 1</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4274.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4274.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 2</div>
       </div>
-      <div class="flip-back">텍스트 2</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4275.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4275.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 3</div>
       </div>
-      <div class="flip-back">텍스트 3</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4276.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4276.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 4</div>
       </div>
-      <div class="flip-back">텍스트 4</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4277.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4277.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 5</div>
       </div>
-      <div class="flip-back">텍스트 5</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4278.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4278.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 6</div>
       </div>
-      <div class="flip-back">텍스트 6</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4279.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4279.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 7</div>
       </div>
-      <div class="flip-back">텍스트 7</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4280.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4280.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 8</div>
       </div>
-      <div class="flip-back">텍스트 8</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4281.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4281.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 9</div>
       </div>
-      <div class="flip-back">텍스트 9</div>
     </div>
-  </div>
 
-  <div class="flip-card" onclick="this.classList.toggle('flipped')">
-    <div class="flip-inner">
-      <div class="flip-front">
-        <img src="images/IMG_4282.jpeg" alt="">
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <img src="images/IMG_4282.jpeg" alt="">
+        </div>
+        <div class="flip-back">텍스트 10</div>
       </div>
-      <div class="flip-back">텍스트 10</div>
     </div>
-  </div>
 
+  </div>
 </div>
+
+
 <div class="section-title">Congratulations</div>
 
 <div class="section-card">
+
   <div style="width:80%;max-width:600px;font-size:11px;">
     <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096614412920689016" style="text-decoration:none;color:inherit;line-height:0;">
+      <a href="https://x.com/day6official/status/2096614412920689016"
+         style="text-decoration:none;color:inherit;line-height:0;">
         𝙷𝙰𝙿𝙿𝚈 𝙳𝙰𝚈𝟼 𝟷𝟷𝚃𝙷 𝙳𝙴𝙱𝚄𝚃 𝙰𝙽𝙽𝙸𝚅𝙴𝚁𝚂𝙰𝚁𝚈 ˚ෆ*₊<br><br>
         #DAY6 #데이식스<br>
         #데이식스와_우리의_계절<br>
@@ -254,23 +249,34 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
       </a>
     </div>
   </div>
-  </div>
-  <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-    <img alt="" src="https://pbs.twimg.com/media/HRiqLQabYAAG3YZ?format=jpg&amp;name=4096x4096" style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+  <a href="https://youtube.com/shorts/ASSRx03COS0"
+     style="text-decoration:none;color:inherit;line-height:0;">
+    <img
+      alt=""
+      src="https://pbs.twimg.com/media/HRiqLQabYAAG3YZ?format=jpg&amp;name=4096x4096"
+      style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </a>
-  <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-    <img alt="" src="https://pbs.twimg.com/media/HRiqLQaasAAUrhF?format=jpg&amp;name=4096x4096" style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+  <a href="https://youtube.com/shorts/ASSRx03COS0"
+     style="text-decoration:none;color:inherit;line-height:0;">
+    <img
+      alt=""
+      src="https://pbs.twimg.com/media/HRiqLQaasAAUrhF?format=jpg&amp;name=4096x4096"
+      style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </a>
+
 </div>
-</div>
-  </div>
+
 
 <div class="section-title">DAY6 FOUREVER</div>
 
 <div class="section-card">
+
   <div style="width:90%;max-width:650px;font-size:11px;">
     <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096614524631830927" style="text-decoration:none;color:inherit;line-height:0;">
+      <a href="https://x.com/day6official/status/2096614524631830927"
+         style="text-decoration:none;color:inherit;line-height:0;">
         💌 [To. My Day]<br>
         깜짝 선물이 도착했습니다🎁<br>
         11살 기념 DAY6 가족사진, My Day 마음에 쏙 들기를✨<br><br>
@@ -294,15 +300,18 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
     <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
     <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
   </div>
+
 </div>
 
 
 <div class="section-title">LIVE Notice</div>
 
 <div class="section-card">
+
   <div style="width:80%;max-width:600px;font-size:11px;">
     <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096970905406865412" style="text-decoration:none;color:inherit;line-height:0;">
+      <a href="https://x.com/day6official/status/2096970905406865412"
+         style="text-decoration:none;color:inherit;line-height:0;">
         DAY6 11th Anniversary Live🥳<br>
         11번째 생일맞이 홈파티 준비 완료!🏠✨<br><br>
         잠시 후 시작되는 DAY6만의 특별한 홈파티에서<br>
@@ -310,21 +319,28 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
         📍26.09.07 (MON) 09:07 PM (KST)
       </a><br>
       📺
-      <a href="https://youtube.com/live/etcA8OjEV6s" style="text-decoration:none;color:inherit;line-height:0;">
+      <a href="https://youtube.com/live/etcA8OjEV6s"
+         style="text-decoration:none;color:inherit;line-height:0;">
         <span style="color:#0099ff;">youtu.be/live/etcA8OjEV6s</span>
       </a>
     </div>
   </div>
 
-  <a href="https://youtube.com/live/etcA8OjEV6s" style="text-decoration:none;color:inherit;line-height:0;">
-    <img alt="" src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&amp;name=large" style="width:63%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+  <a href="https://youtube.com/live/etcA8OjEV6s"
+     style="text-decoration:none;color:inherit;line-height:0;">
+    <img
+      alt=""
+      src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&amp;name=large"
+      style="width:63%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </a>
+
 </div>
 
 
 <div class="section-title">LIVE CHAPTURE TIME</div>
 
 <div class="section-card">
+
   <div style="width:90%;max-width:650px;font-size:11px;margin-top:4px;">
     <div style="padding:2px 3px;">
       <span style="background:#dedede;padding:1px 0;">
@@ -424,15 +440,18 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
     <img alt="" src="https://img-cdn.theqoo.net/dNZtxn.jpg" style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
     <img alt="" src="https://img-cdn.theqoo.net/AXXFem.jpg" style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </div>
+
 </div>
 
 
 <div class="section-title">[ #DAY6_BEHIND ]</div>
 
 <div class="section-card">
+
   <div style="width:80%;max-width:600px;font-size:11px;">
     <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096970905406865412" style="text-decoration:none;color:inherit;line-height:0;">
+      <a href="https://x.com/day6official/status/2096970905406865412"
+         style="text-decoration:none;color:inherit;line-height:0;">
         DAY6의 11번째 생일맞이 홈파티<br><br>
         &lt;Welcome to the Party&gt;에서<br>
         다시금 열어 본 선물같은 시간들 💝<br>
@@ -442,25 +461,41 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
     </div>
   </div>
 
-  <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-    <img alt="" src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&amp;name=4096x4096" style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+  <a href="https://youtube.com/shorts/ASSRx03COS0"
+     style="text-decoration:none;color:inherit;line-height:0;">
+    <img
+      alt=""
+      src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&amp;name=4096x4096"
+      style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </a>
-  <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-    <img alt="" src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&amp;name=4096x4096" style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+  <a href="https://youtube.com/shorts/ASSRx03COS0"
+     style="text-decoration:none;color:inherit;line-height:0;">
+    <img
+      alt=""
+      src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&amp;name=4096x4096"
+      style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
   </a>
+
 </div>
 
 
 <div class="section-title">My Day Pick❗️</div>
 
 <div class="section-card">
+
   <div style="width:100%;max-width:750px;font-size:11px;">
     <div style="padding:2px 3px;">
+
       <div style="margin-top:4px;width:100%;display:flex;white-space:nowrap;">
 
         <div style="flex:1;display:inline-block;vertical-align:top;white-space:normal;margin-right:2px;">
-          <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-            <img alt="" src="https://pbs.twimg.com/amplify_video_thumb/2096985432433336320/img/DILkUlF0OB8UmXES.jpg" style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+          <a href="https://youtube.com/shorts/ASSRx03COS0"
+             style="text-decoration:none;color:inherit;line-height:0;">
+            <img
+              alt=""
+              src="https://pbs.twimg.com/amplify_video_thumb/2096985432433336320/img/DILkUlF0OB8UmXES.jpg"
+              style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>나는 MJ 말고 𝓜(𝔂) 𝓓(𝓪𝔂) 🕷️🕸️</strong>
@@ -468,8 +503,12 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
         </div>
 
         <div style="flex:1;display:inline-block;vertical-align:top;white-space:normal;margin-right:2px;">
-          <a href="https://youtube.com/shorts/Hee4wgZ7a3M" style="text-decoration:none;color:inherit;line-height:0;">
-            <img alt="" src="https://pbs.twimg.com/amplify_video_thumb/2096989170338291712/img/XqQv7Ll2aQWHnl0i.jpg" style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+          <a href="https://youtube.com/shorts/Hee4wgZ7a3M"
+             style="text-decoration:none;color:inherit;line-height:0;">
+            <img
+              alt=""
+              src="https://pbs.twimg.com/amplify_video_thumb/2096989170338291712/img/XqQv7Ll2aQWHnl0i.jpg"
+              style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>하지하지마를 하지하지마 🙅</strong>
@@ -477,8 +516,12 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
         </div>
 
         <div style="flex:1;display:inline-block;vertical-align:top;white-space:normal;">
-          <a href="https://youtube.com/shorts/W2ktAJbaYnA" style="text-decoration:none;color:inherit;line-height:0;">
-            <img alt="" src="https://pbs.twimg.com/amplify_video_thumb/2096990065763491840/img/A8inMeqlhdLTjZWP.jpg" style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+          <a href="https://youtube.com/shorts/W2ktAJbaYnA"
+             style="text-decoration:none;color:inherit;line-height:0;">
+            <img
+              alt=""
+              src="https://pbs.twimg.com/amplify_video_thumb/2096990065763491840/img/A8inMeqlhdLTjZWP.jpg"
+              style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>어디서나 당당하게 걷기💗</strong>
@@ -488,9 +531,11 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
       </div>
     </div>
   </div>
+
 </div>
 
 <p>&nbsp;</p>
+
 </div>
 
 </body>
