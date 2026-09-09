@@ -63,6 +63,7 @@ div[style*="overflow-x:auto"]{
   grid-template-columns:repeat(3,1fr);
   gap:6px;
   width:100%;
+  margin-bottom:24px;
 }
 
 .flip-card{
@@ -112,7 +113,7 @@ div[style*="overflow-x:auto"]{
   line-height:1.4;
   font-weight:700;
   color:#333;
-  border:2px solid transparent;
+  background:#fff;
   border-radius:8px;
 }
 
@@ -143,19 +144,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* Congratulations */
-.visual-1{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #697082,
-      #FA4F17,
-      #FA4F17,
-      #FA4F17,
-      #697082
-    ) border-box;
-}
-
 .visual-1 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -169,26 +157,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* 예뻤어 */
-.visual-2{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #E95B4B,
-      #952392,
-      #32B2D9,
-      #9994A2,
-      #1F8096,
-      #7EB689,
-      #E2315D,
-      #A8DA39,
-      #6892FA,
-      #EA73D8,
-      #FB9B24,
-      #ECCB70
-    ) border-box;
-}
-
 .visual-2 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -209,19 +177,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* My Day */
-.visual-3{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #8FA15D,
-      #5997AD,
-      #8FA15D,
-      #5997AD,
-      #8FA15D
-    ) border-box;
-}
-
 .visual-3 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -235,19 +190,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* 행복했던 날들이었다 */
-.visual-4{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #9EBFCE,
-      #4179B5,
-      #304F8A,
-      #4179B5,
-      #9EBFCE
-    ) border-box;
-}
-
 .visual-4 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -261,19 +203,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* Beautiful Feeling */
-.visual-5{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #FEFFC6,
-      #FEDBC0,
-      #FEC5A6,
-      #FEDBC0,
-      #FEFFC6
-    ) border-box;
-}
-
 .visual-5 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -287,19 +216,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* 한 페이지가 될 수 있게 */
-.visual-6{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #E0DACB,
-      #8C867A,
-      #615D57,
-      #8C867A,
-      #E0DACB
-    ) border-box;
-}
-
 .visual-6 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -313,19 +229,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* Welcome to the Show */
-.visual-7{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #53BCD5,
-      #155D88,
-      #102660,
-      #155D88,
-      #53BCD5
-    ) border-box;
-}
-
 .visual-7 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -339,19 +242,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* 녹아내려요 */
-.visual-8{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #FCD184,
-      #72B398,
-      #DA1F2B,
-      #72B398,
-      #FCD184
-    ) border-box;
-}
-
 .visual-8 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -365,19 +255,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* HAPPY */
-.visual-9{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #1CC5E6,
-      #FFFCDB,
-      #F4B5CF,
-      #FFFCDB,
-      #1CC5E6
-    ) border-box;
-}
-
 .visual-9 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -391,19 +268,6 @@ div[style*="overflow-x:auto"]{
 
 
 /* 꿈의 버스 */
-.visual-10{
-  background:
-    linear-gradient(#fff,#fff) padding-box,
-    linear-gradient(
-      to right,
-      #B6CBE4,
-      #7199D5,
-      #4F6FC4,
-      #3764C0,
-      #2364BE
-    ) border-box;
-}
-
 .visual-10 .visual-title{
   background-image:linear-gradient(
     to right,
@@ -442,130 +306,126 @@ div[style*="overflow-x:auto"]{
 
 <div class="section-title">Visual Artwork</div>
 
-<div class="section-card">
+<div class="flip-grid">
 
-  <div class="flip-grid">
-
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4273.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-1">
-          <div class="visual-title">Congratulations</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4273.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-1">
+        <div class="visual-title">Congratulations</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4274.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-2">
-          <div class="visual-title">예뻤어</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4274.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-2">
+        <div class="visual-title">예뻤어</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4275.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-3">
-          <div class="visual-title">My Day</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4275.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-3">
+        <div class="visual-title">My Day</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4276.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-4">
-          <div class="visual-title">행복했던 날들이었다</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4276.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-4">
+        <div class="visual-title">행복했던 날들이었다</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4277.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-5">
-          <div class="visual-title">Beautiful Feeling</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4277.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-5">
+        <div class="visual-title">Beautiful Feeling</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4278.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-6">
-          <div class="visual-title">한 페이지가 될 수 있게</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4278.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-6">
+        <div class="visual-title">한 페이지가 될 수 있게</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4279.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-7">
-          <div class="visual-title">Welcome to the Show</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4279.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-7">
+        <div class="visual-title">Welcome to the Show</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4280.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-8">
-          <div class="visual-title">녹아내려요</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4280.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-8">
+        <div class="visual-title">녹아내려요</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4281.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-9">
-          <div class="visual-title">HAPPY</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4281.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-9">
+        <div class="visual-title">HAPPY</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
+  </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4282.jpeg" alt="">
-        </div>
-        <div class="flip-back visual-10">
-          <div class="visual-title">꿈의 버스</div>
-          <div class="visual-text">문구 입력</div>
-        </div>
+  <div class="flip-card" onclick="this.classList.toggle('flipped')">
+    <div class="flip-inner">
+      <div class="flip-front">
+        <img src="images/IMG_4282.jpeg" alt="">
+      </div>
+      <div class="flip-back visual-10">
+        <div class="visual-title">꿈의 버스</div>
+        <div class="visual-text">문구 입력</div>
       </div>
     </div>
-
   </div>
 
 </div>
