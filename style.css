@@ -235,7 +235,7 @@ body.lightbox-open{
   display:flex;
   align-items:center;
   justify-content:center;
-  background:rgba(255,255,255,.96);
+  background:rgba(255,255,255,.98);
   opacity:0;
   visibility:hidden;
   transition:opacity .18s ease,visibility .18s ease;
@@ -262,6 +262,8 @@ body.lightbox-open{
   width:auto;
   height:auto;
   object-fit:contain;
+  background:#fff;
+  box-shadow:0 8px 28px rgba(0,0,0,.10);
   user-select:none;
   -webkit-user-drag:none;
 }
@@ -271,7 +273,7 @@ body.lightbox-open{
   left:50%;
   bottom:-30px;
   transform:translateX(-50%);
-  color:#777;
+  color:#7a7f84;
   font-size:11px;
 }
 
@@ -282,7 +284,6 @@ body.lightbox-open{
   z-index:2;
   border:0;
   background:rgba(0,0,0,.06);
-
   color:#333;
   cursor:pointer;
   backdrop-filter:blur(8px);
