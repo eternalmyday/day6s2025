@@ -57,7 +57,7 @@ div[style*="overflow-x:auto"]{
 
 
   border-radius:14px;
-box-shadow:0 5px 16px rgba(70,110,140,0.28);
+box-shadow:0 3px 10px rgba(70,110,140,0.16);
 
   overflow:hidden;
 }
@@ -78,23 +78,32 @@ box-shadow:0 5px 16px rgba(70,110,140,0.28);
 <p>&nbsp;</p>
 <div class="section-card">
 
-  <div id="dday"></div>
+<div id="dday" style="text-align:center;font-size:14px;font-weight:700;"></div>
 
 </div>
 
 <script>
-const target = new Date("2026-09-07T00:00:00");
+
+const target = new Date("2015-09-07T00:00:00");
+
 const today = new Date();
 
 target.setHours(0,0,0,0);
+
 today.setHours(0,0,0,0);
 
 const diff = Math.round((target - today) / (1000 * 60 * 60 * 24));
 
-document.getElementById("dday").textContent =
+const ddayText =
+
   diff > 0 ? `D-${diff}` :
+
   diff === 0 ? "D-DAY" :
+
   `D+${Math.abs(diff)}`;
+
+document.getElementById("dday").textContent = `DAY6 11주년 ${ddayText}`;
+
 </script>
 <div class="section-title">Congratulations</div>
 
