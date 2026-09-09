@@ -34,6 +34,12 @@ div[style*="overflow-x:auto"]{
   box-sizing:border-box;
 }
 
+.mobile-page > table{
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 auto;
+}
+
 .section-title{
   margin:24px 0 10px;
   text-align:center;
@@ -105,7 +111,135 @@ div[style*="overflow-x:auto"]{
   text-align:center;
   font-size:10px;
   line-height:1.4;
-  background:linear-gradient(135deg,#F7FBFE 0%,#EAF4FA 55%,#DFEEF7 100%);
+  font-weight:700;
+  color:#fff;
+}
+
+/* Congratulations */
+.visual-1{
+  background-image:linear-gradient(
+    to right,
+    #697082,
+    #FA4F17,
+    #FA4F17,
+    #FA4F17,
+    #697082
+  );
+}
+
+/* 예뻤어 */
+.visual-2{
+  background-image:linear-gradient(
+    to right,
+    #E95B4B,
+    #952392,
+    #32B2D9,
+    #9994A2,
+    #1F8096,
+    #7EB689,
+    #E2315D,
+    #A8DA39,
+    #6892FA,
+    #EA73D8,
+    #FB9B24,
+    #ECCB70
+  );
+}
+
+/* My Day */
+.visual-3{
+  background-image:linear-gradient(
+    to right,
+    #8FA15D,
+    #5997AD,
+    #8FA15D,
+    #5997AD,
+    #8FA15D
+  );
+}
+
+/* 행복했던 날들이었다 */
+.visual-4{
+  background-image:linear-gradient(
+    to right,
+    #9EBFCE,
+    #4179B5,
+    #304F8A,
+    #4179B5,
+    #9EBFCE
+  );
+}
+
+/* Beautiful Feeling */
+.visual-5{
+  background-image:linear-gradient(
+    to right,
+    #FEFFC6,
+    #FEDBC0,
+    #FEC5A6,
+    #FEDBC0,
+    #FEFFC6
+  );
+}
+
+/* 한 페이지가 될 수 있게 */
+.visual-6{
+  background-image:linear-gradient(
+    to right,
+    #E0DACB,
+    #8C867A,
+    #615D57,
+    #8C867A,
+    #E0DACB
+  );
+}
+
+/* Welcome to the Show */
+.visual-7{
+  background-image:linear-gradient(
+    to right,
+    #53BCD5,
+    #155D88,
+    #102660,
+    #155D88,
+    #53BCD5
+  );
+}
+
+/* 녹아내려요 */
+.visual-8{
+  background-image:linear-gradient(
+    to right,
+    #FCD184,
+    #72B398,
+    #DA1F2B,
+    #72B398,
+    #FCD184
+  );
+}
+
+/* HAPPY */
+.visual-9{
+  background-image:linear-gradient(
+    to right,
+    #1CC5E6,
+    #FFFCDB,
+    #F4B5CF,
+    #FFFCDB,
+    #1CC5E6
+  );
+}
+
+/* 꿈의 버스 */
+.visual-10{
+  background-image:linear-gradient(
+    to right,
+    #B6CBE4,
+    #7199D5,
+    #4F6FC4,
+    #3764C0,
+    #2364BE
+  );
 }
 
 @media(max-width:480px){
@@ -136,99 +270,107 @@ div[style*="overflow-x:auto"]{
 <div class="section-title">DAY6 FOUREVER</div>
 
 <div class="section-card">
-  <div class="flip-grid">
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4273.jpeg" alt="">
+  <div style="width:90%;max-width:650px;font-size:11px;">
+    <div style="padding:2px 3px;">
+
+      <div class="flip-grid">
+
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4273.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-1">Congratulations</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 1</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4274.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4274.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-2">예뻤어</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 2</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4275.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4275.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-3">My Day</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 3</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4276.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4276.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-4">행복했던 날들이었다</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 4</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4277.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4277.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-5">Beautiful Feeling</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 5</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4278.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4278.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-6">한 페이지가 될 수 있게</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 6</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4279.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4279.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-7">Welcome to the Show</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 7</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4280.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4280.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-8">녹아내려요</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 8</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4281.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4281.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-9">HAPPY</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 9</div>
-      </div>
-    </div>
 
-    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="images/IMG_4282.jpeg" alt="">
+        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/IMG_4282.jpeg" alt="">
+            </div>
+            <div class="flip-back visual-10">꿈의 버스</div>
+          </div>
         </div>
-        <div class="flip-back">텍스트 10</div>
-      </div>
-    </div>
 
+      </div>
+
+    </div>
   </div>
+
 </div>
 
 
@@ -287,18 +429,55 @@ div[style*="overflow-x:auto"]{
   </div>
 
   <div style="width:100%;overflow-x:auto;white-space:nowrap;">
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;"><img alt="" src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;"></a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
+    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
+      <img alt="" src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+    </a>
+
   </div>
 
 </div>
@@ -318,6 +497,7 @@ div[style*="overflow-x:auto"]{
         My Day를 설레는 마음으로 기다리고 있을게요(*˘▿˘✽)<br><br>
         📍26.09.07 (MON) 09:07 PM (KST)
       </a><br>
+
       📺
       <a href="https://youtube.com/live/etcA8OjEV6s"
          style="text-decoration:none;color:inherit;line-height:0;">
@@ -497,6 +677,7 @@ div[style*="overflow-x:auto"]{
               src="https://pbs.twimg.com/amplify_video_thumb/2096985432433336320/img/DILkUlF0OB8UmXES.jpg"
               style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
+
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>나는 MJ 말고 𝓜(𝔂) 𝓓(𝓪𝔂) 🕷️🕸️</strong>
           </div>
@@ -510,6 +691,7 @@ div[style*="overflow-x:auto"]{
               src="https://pbs.twimg.com/amplify_video_thumb/2096989170338291712/img/XqQv7Ll2aQWHnl0i.jpg"
               style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
+
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>하지하지마를 하지하지마 🙅</strong>
           </div>
@@ -523,12 +705,14 @@ div[style*="overflow-x:auto"]{
               src="https://pbs.twimg.com/amplify_video_thumb/2096990065763491840/img/A8inMeqlhdLTjZWP.jpg"
               style="width:100%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
           </a>
+
           <div style="padding:3px 2px 0 2px;font-size:9px;line-height:1.4;">
             <strong>어디서나 당당하게 걷기💗</strong>
           </div>
         </div>
 
       </div>
+
     </div>
   </div>
 
