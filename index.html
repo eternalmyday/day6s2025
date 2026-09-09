@@ -61,10 +61,7 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
 
   overflow:hidden;
 }
-  #dday{
-  text-align:center;
-  font-size:14px;
-  font-weight:700;
+
 }
 @media(max-width:480px){
   .mobile-page{
@@ -76,35 +73,22 @@ box-shadow:0 3px 10px rgba(70,110,140,0.16);
 <body>
   <div class="mobile-page">
 <p>&nbsp;</p>
+
+
 <div class="section-card">
+  <div style="width:80%;max-width:600px;font-size:11px;">
+    <div style="padding:2px 3px;">
+      <iframe
+  width="100%"
+  src="https://www.youtube.com/embed/TAeFPCf__uA"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+    </div>
+  </div>
 
-<div id="dday" style="text-align:center;font-size:14px;font-weight:700;"></div>
-
-</div>
-
-<script>
-
-const target = new Date("2015-09-07T00:00:00");
-
-const today = new Date();
-
-target.setHours(0,0,0,0);
-
-today.setHours(0,0,0,0);
-
-const diff = Math.round((target - today) / (1000 * 60 * 60 * 24));
-
-const ddayText =
-
-  diff > 0 ? `D-${diff}` :
-
-  diff === 0 ? "D-DAY" :
-
-  `D+${Math.abs(diff)}`;
-
-document.getElementById("dday").textContent = `DEBUT ${ddayText}`;
-
-</script>
 <div class="section-title">Congratulations</div>
 
 <div class="section-card">
