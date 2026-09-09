@@ -107,6 +107,7 @@ img{
   justify-content:center;
   text-align:center;
 }
+
 .detail-back::before{
   content:"";
   position:absolute;
@@ -116,11 +117,11 @@ img{
 }
 
 .detail-title,
-.detail-text,
-.detail-sns{
+.detail-text{
   position:relative;
   z-index:1;
 }
+
 .detail-title{
   width:100%;
   color:#fff;
@@ -140,23 +141,24 @@ img{
 }
 
 
-/* SNS 아이콘 */
+/* SNS */
 
 .detail-sns{
   position:absolute;
+  z-index:2;
   left:0;
   right:0;
   bottom:14px;
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   gap:12px;
 }
 
 .detail-sns a{
-  display:block;
   width:20px;
   height:20px;
+  display:block;
   line-height:0;
   text-decoration:none;
 }
@@ -164,12 +166,12 @@ img{
 .detail-sns img{
   width:20px;
   height:20px;
-  display:block;
   object-fit:contain;
+  display:block;
 }
 
 
-/* Congratulations */
+/* 1 Congratulations */
 
 .visual-1{
   background-image:linear-gradient(
@@ -183,7 +185,7 @@ img{
 }
 
 
-/* 예뻤어 */
+/* 2 예뻤어 */
 
 .visual-2{
   background-image:linear-gradient(
@@ -204,7 +206,7 @@ img{
 }
 
 
-/* My Day */
+/* 3 My Day */
 
 .visual-3{
   background-image:linear-gradient(
@@ -218,7 +220,7 @@ img{
 }
 
 
-/* 행복했던 날들이었다 */
+/* 4 행복했던 날들이었다 */
 
 .visual-4{
   background-image:linear-gradient(
@@ -232,7 +234,7 @@ img{
 }
 
 
-/* Beautiful Feeling */
+/* 5 Beautiful Feeling */
 
 .visual-5{
   background-image:linear-gradient(
@@ -246,7 +248,7 @@ img{
 }
 
 
-/* 한 페이지가 될 수 있게 */
+/* 6 한 페이지가 될 수 있게 */
 
 .visual-6{
   background-image:linear-gradient(
@@ -260,7 +262,7 @@ img{
 }
 
 
-/* Welcome to the Show */
+/* 7 Welcome to the Show */
 
 .visual-7{
   background-image:linear-gradient(
@@ -274,7 +276,7 @@ img{
 }
 
 
-/* 녹아내려요 */
+/* 8 녹아내려요 */
 
 .visual-8{
   background-image:linear-gradient(
@@ -288,7 +290,7 @@ img{
 }
 
 
-/* HAPPY */
+/* 9 HAPPY */
 
 .visual-9{
   background-image:linear-gradient(
@@ -302,7 +304,7 @@ img{
 }
 
 
-/* 꿈의 버스 */
+/* 10 꿈의 버스 */
 
 .visual-10{
   background-image:linear-gradient(
@@ -325,21 +327,16 @@ img{
 </style>
 </head>
 
-
 <body>
 
 <div class="mobile-page">
 
   <div class="detail-header">
-
     <a href="index.html"
        class="back-link"
        aria-label="메인 페이지로 이동">‹</a>
 
-    <div class="detail-heading">
-      Visual Artwork
-    </div>
-
+    <div class="detail-heading">Visual Artwork</div>
   </div>
 
 
@@ -356,13 +353,10 @@ img{
 
       <div class="detail-back visual-1">
 
-        <div class="detail-title">
-          Congratulations
-        </div>
+        <div class="detail-title">Congratulations</div>
 
         <div class="detail-text">
           <strong>우리의 시작, Congratulations</strong><br><br>
-
           축하라는 말이 아직은 어색했던 날.<br>
           우리의 첫 장을 넘기자,<br>
           계절마다 다른 감정들이 피어나기 시작했다.
@@ -370,7 +364,7 @@ img{
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNHRQYyTWJO/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -378,7 +372,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1953971241091801436"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -389,7 +383,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -407,13 +400,10 @@ img{
 
       <div class="detail-back visual-2">
 
-        <div class="detail-title">
-          예뻤어
-        </div>
+        <div class="detail-title">예뻤어</div>
 
         <div class="detail-text">
           <strong>열두 개의 계절, 예뻤어</strong><br><br>
-
           매달 두 곡씩, 우리의 마음들이 조금씩 노래가 되었다.<br>
           그 노래를 함께 들어준 누군가가 있었기에<br>
           우리는 조금 더 단단해졌다.
@@ -421,7 +411,7 @@ img{
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/reel/DNHzYhzvaxE/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -429,7 +419,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954046505410867534"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -440,7 +430,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -458,20 +447,17 @@ img{
 
       <div class="detail-back visual-3">
 
-        <div class="detail-title">
-          My Day
-        </div>
+        <div class="detail-title">My Day</div>
 
         <div class="detail-text">
           <strong>우리가 서로를 알게 된 순간, My Day</strong><br><br>
-
           같은 마음을 나누는 사람이 생겼다.<br>
           그날 이후, 우리의 시간은 전보다 조금 더 특별해졌다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNKGc8zJZJf/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -479,7 +465,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954107147844759845"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -490,7 +476,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -508,20 +493,17 @@ img{
 
       <div class="detail-back visual-4">
 
-        <div class="detail-title">
-          행복했던 날들이었다
-        </div>
+        <div class="detail-title">행복했던 날들이었다</div>
 
         <div class="detail-text">
           <strong>돌이켜 보면 참 좋았던 시간 모두, 행복했던 날들이었다</strong><br><br>
-
           함께 웃고, 노래하며 뜨겁게 지나간 날들.<br>
           그 시간을 지나 우리는 서로의 온전한 하루가 되었다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNI4c6qPhr6/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -529,7 +511,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954198505029066899"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -540,7 +522,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -558,20 +539,17 @@ img{
 
       <div class="detail-back visual-5">
 
-        <div class="detail-title">
-          Beautiful Feeling
-        </div>
+        <div class="detail-title">Beautiful Feeling</div>
 
         <div class="detail-text">
           <strong>가장 선명했던 하루의, Beautiful Feeling</strong><br><br>
-
           무대보다 마음이 앞섰고,<br>
           그 하루의 온기가 켜켜이 스며 마침내 새로운 장을 열었다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNJ2BYcTo_x/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -579,7 +557,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954333903097085970"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -590,7 +568,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -608,20 +585,17 @@ img{
 
       <div class="detail-back visual-6">
 
-        <div class="detail-title">
-          한 페이지가 될 수 있게
-        </div>
+        <div class="detail-title">한 페이지가 될 수 있게</div>
 
         <div class="detail-text">
           <strong>매 순간이 하나의 이야기가 되어, 한 페이지가 될 수 있게</strong><br><br>
-
           그렇게 쌓인 감정들이 노래가 되고, 한 편의 이야기가 되었다.<br>
           그 기억을 품은 채 우리는 다시 무대로 걸어 나갔다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNK7fABvaqh/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -629,7 +603,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954486657895534630"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -640,7 +614,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -658,20 +631,17 @@ img{
 
       <div class="detail-back visual-7">
 
-        <div class="detail-title">
-          Welcome to the Show
-        </div>
+        <div class="detail-title">Welcome to the Show</div>
 
         <div class="detail-text">
           <strong>다시 같은 자리에서, Welcome to the Show</strong><br><br>
-
           잠시 멈췄던 시간, 다시 완전체로 서게 된 순간.<br>
           무대는 변하지 않았고, 우리는 조금 더 단단해져 있었다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNNFKJCvuwc/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -679,7 +649,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954789398396186917"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -690,7 +660,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -708,13 +677,10 @@ img{
 
       <div class="detail-back visual-8">
 
-        <div class="detail-title">
-          녹아내려요
-        </div>
+        <div class="detail-title">녹아내려요</div>
 
         <div class="detail-text">
           <strong>가장 찬란했던 때, 녹아내려요</strong><br><br>
-
           우리는 누구보다 사랑 받았고,<br>
           그 사랑을 가장 뜨겁게 받아 안았다.<br>
           그리고 그만큼 더 많은 사람들과 함께할 무대를 꿈꾸기 시작했다.
@@ -722,7 +688,7 @@ img{
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNNsrZ-vqLj/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -730,7 +696,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1954875973390028923"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -741,7 +707,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -759,13 +724,10 @@ img{
 
       <div class="detail-back visual-9">
 
-        <div class="detail-title">
-          HAPPY
-        </div>
+        <div class="detail-title">HAPPY</div>
 
         <div class="detail-text">
           <strong>목소리가 모여 파도가 된다, HAPPY</strong><br><br>
-
           수만 명의 목소리가 파도처럼 번져,<br>
           끝이 보이지 않는 함성 속에 닿았다.<br>
           그 순간 우린 알았다.<br>
@@ -774,7 +736,7 @@ img{
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNP2sK6vFwH"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -782,7 +744,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1955179719344918837"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -793,7 +755,6 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
 
@@ -811,20 +772,17 @@ img{
 
       <div class="detail-back visual-10">
 
-        <div class="detail-title">
-          꿈의 버스
-        </div>
+        <div class="detail-title">꿈의 버스</div>
 
         <div class="detail-text">
           <strong>계속되는 꿈, 멈추지 않는 꿈의 버스</strong><br><br>
-
           10년은 더 먼 길을 잇는 하나의 정류장일 뿐.<br>
           오늘도 우리는 여전히, 멈추지 않고 나아간다.
         </div>
 
         <div class="detail-sns">
 
-          <a href="인스타그램링크"
+          <a href="https://www.instagram.com/p/DNQR5GzvGG4/"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -832,7 +790,7 @@ img{
             <img src="images/instagram.svg" alt="Instagram">
           </a>
 
-          <a href="X링크"
+          <a href="https://x.com/day6official/status/1955239623309005048"
              target="_blank"
              rel="noreferrer noopener"
              onclick="event.stopPropagation();"
@@ -843,10 +801,8 @@ img{
         </div>
 
       </div>
-
     </div>
   </div>
-
 
 </div>
 
