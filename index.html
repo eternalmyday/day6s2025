@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<title>DAY6</title>
 
 <style>
 html{
@@ -15,6 +13,8 @@ body{
   margin:0;
   padding:0;
   background:#F3F8FC;
+  color:rgb(51,51,51);
+  font-family:Arial,sans-serif;
 }
 
 img{
@@ -45,6 +45,7 @@ div[style*="overflow-x:auto"]{
   text-align:center;
   font-size:15px;
   font-weight:700;
+  line-height:1.4;
 }
 
 .section-card{
@@ -100,6 +101,50 @@ div[style*="overflow-x:auto"]{
   color:#555;
 }
 
+
+/* 가로 스와이프 영상 */
+
+.video-scroll{
+  width:100%;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+
+.video-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+.video-slide{
+  flex:0 0 100%;
+  scroll-snap-align:start;
+}
+
+.video-slide iframe{
+  width:100%;
+  display:block;
+  aspect-ratio:16/9;
+  border:0;
+  border-radius:12px;
+}
+
+.swipe-guide{
+  margin-top:5px;
+  text-align:center;
+  font-size:9px;
+  line-height:1.4;
+  color:#999;
+}
+
+.small-title{
+  font-size:11px;
+  font-weight:400;
+}
+
+
 @media(max-width:480px){
   .mobile-page{
     padding:0 10px;
@@ -107,6 +152,7 @@ div[style*="overflow-x:auto"]{
 }
 </style>
 </head>
+
 
 <body>
 
@@ -125,7 +171,11 @@ div[style*="overflow-x:auto"]{
 </iframe>
 
 
-<div class="section-title">Visual Artwork</div>
+<!-- Visual Artwork -->
+
+<div class="section-title">
+  Visual Artwork
+</div>
 
 <div class="section-card">
 
@@ -173,10 +223,9 @@ div[style*="overflow-x:auto"]{
 
     <div class="visual-last-text">
       <div>
-        <strong>10주년 기념 프로젝트의 시작</strong><br><br>
-                25.08.09. ~ 08.12.<br>
+        <strong>10주년 기념 프로젝트의 시작</strong><br>
         DAY6의 음악 여정을 톺아볼 수 있는 콘텐츠<br>
-<br>
+        공개일 25.08.09. ~ 08.12.<br><br>
         * 카드를 선택하면 상세 페이지로 이동합니다.
       </div>
     </div>
@@ -186,13 +235,19 @@ div[style*="overflow-x:auto"]{
 </div>
 
 
-<div class="section-title">DAY6 10th Anniversary Medley Live<br>
-(2015 The Day ~ 2025 The DECADE)</div>
+<!-- DAY6 10th Anniversary Medley Live -->
+
+<div class="section-title">
+  DAY6 10th Anniversary Medley Live<br>
+  <span class="small-title">
+    (2015 The Day ~ 2025 The DECADE)
+  </span>
+</div>
 
 <iframe
   width="100%"
   src="https://www.youtube.com/embed/5JeBGCbeOJ0"
-  title="YouTube video player"
+  title="DAY6 10th Anniversary Medley Live (2015 The Day ~ 2025 The DECADE)"
   frameborder="0"
   style="display:block;aspect-ratio:16/9;margin:0 auto;border-radius:12px;"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -200,71 +255,262 @@ div[style*="overflow-x:auto"]{
 </iframe>
 
 
-<div class="section-title">DAY6 FOUREVER</div>
+<!-- DAY6 10th Anniversary Documentary -->
+
+<div class="section-title">
+  <span class="small-title">
+    DAY6 10th Anniversary Documentary
+  </span><br>
+
+  <span id="documentary-current-title">
+    &lt;DAY6: Time of Our Decade&gt; Teaser
+  </span>
+</div>
+
+<div class="video-scroll" id="documentary-scroll">
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/U3eKRl0hNq4"
+      title="DAY6 10th Anniversary Documentary <DAY6: Time of Our Decade> Teaser"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/bYyLW9xVIAA"
+      title="DAY6 10th Anniversary Documentary DAY6: Time of Our Decade"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+<div class="swipe-guide">
+  ← 옆으로 넘겨주세요 →
+</div>
+
+
+<!-- DAY6 10th Anniversary Live -->
+
+<div class="section-title">
+  <span class="small-title">
+    DAY6 10th Anniversary Live
+  </span><br>
+  DAY6의 FREE한 라디오
+</div>
+
+<iframe
+  width="100%"
+  src="https://www.youtube.com/embed/zwDvOborZV0"
+  title="DAY6 10th Anniversary Live DAY6의 FREE한 라디오"
+  frameborder="0"
+  style="display:block;aspect-ratio:16/9;margin:0 auto;border-radius:12px;"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+
+<!-- 데식은 10살 -->
+
+<div class="section-title">
+  데식은 10살<br>
+
+  <span
+    id="desik-current-title"
+    class="small-title">
+    Teaser
+  </span>
+</div>
+
+<div class="video-scroll" id="desik-scroll">
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/5Rk9F50ncRs"
+      title="데식은 10살 Teaser"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/6y1G2F52aUc"
+      title="데식은 10살 Ep.1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/H-ebAvadtmY"
+      title="데식은 10살 Ep.2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+<div class="swipe-guide">
+  ← 옆으로 넘겨주세요 →
+</div>
+
+
+<!-- LIVE CLIP (with My Day ver.) -->
+
+<div class="section-title">
+  <span class="small-title">
+    LIVE CLIP (with My Day ver.)
+  </span><br>
+
+  <span id="liveclip-current-title">
+    Welcome to the Show
+  </span>
+</div>
+
+<div class="video-scroll" id="liveclip-scroll">
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/AHy7z1ABnZE"
+      title="LIVE CLIP (with My Day ver.) Welcome to the Show"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/Pp8Bza15AWY"
+      title="LIVE CLIP (with My Day ver.) Congratulations"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/SbzU_9hKfIo"
+      title="LIVE CLIP (with My Day ver.) INSIDE OUT"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/4uKgxsPcA_I"
+      title="LIVE CLIP (with My Day ver.) 꿈의 버스"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/iQBOu81LkT0"
+      title="LIVE CLIP (with My Day ver.) 한 페이지가 될 수 있게"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+<div class="swipe-guide">
+  ← 옆으로 넘겨주세요 →
+</div>
+
+
+<!-- DAY6 FOUREVER -->
+
+<div class="section-title">
+  DAY6 FOUREVER
+</div>
 
 <div class="section-card">
 
-  <div style="width:90%;max-width:650px;font-size:11px;">
-    <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096614524631830927"
-         style="text-decoration:none;color:inherit;line-height:0;">
-        💌 [To. My Day]<br>
-        깜짝 선물이 도착했습니다🎁<br>
-        11살 기념 DAY6 가족사진, My Day 마음에 쏙 들기를✨<br><br>
-        #DAY6 #데이식스<br>
-        #DAY6_11th_Anniversary
-      </a>
-    </div>
+  <div style="width:90%;max-width:650px;margin:0 auto 10px;font-size:11px;line-height:1.5;">
+
+    <a
+      href="https://x.com/day6official/status/2096614524631830927"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
+
+      💌 [To. My Day]<br>
+      깜짝 선물이 도착했습니다🎁<br>
+      11살 기념 DAY6 가족사진, My Day 마음에 쏙 들기를✨<br><br>
+
+      #DAY6 #데이식스<br>
+      #DAY6_11th_Anniversary
+
+    </a>
+
   </div>
+
 
   <div style="width:100%;overflow-x:auto;white-space:nowrap;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+    <a
+      href="https://youtube.com/shorts/ASSRx03COS0"
+      target="_blank"
+      rel="noreferrer noopener">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRirDGnbsAAitg2?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRirDGpa4AAnFa4?format=jpg&name=4096x4096"
+        style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&amp;name=4096x4096" style="width:54%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRirDGwbgAAL7iT?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRirDGwbwAEK72t?format=jpg&name=4096x4096"
+        style="width:54%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisEADbgAEmenx?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisEALaUAAEPvg?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&amp;name=4096x4096" style="width:24%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisEAIaUAAlIAd?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisEAIaQAAVyt2?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisJpSaUAMw0Ib?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-    </a>
+      <img
+        src="https://pbs.twimg.com/media/HRisJpXawAAkG9y?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
 
-    <a href="https://youtube.com/shorts/ASSRx03COS0" style="text-decoration:none;color:inherit;line-height:0;">
-      <img alt="" src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&amp;name=4096x4096" style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+      <img
+        src="https://pbs.twimg.com/media/HRisJpWbQAA24dx?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+      <img
+        src="https://pbs.twimg.com/media/HRisJpTbQAA-qKA?format=jpg&name=4096x4096"
+        style="width:24%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
     </a>
 
   </div>
@@ -272,79 +518,175 @@ div[style*="overflow-x:auto"]{
 </div>
 
 
-<div class="section-title">LIVE Notice</div>
+<!-- LIVE Notice -->
+
+<div class="section-title">
+  LIVE Notice
+</div>
 
 <div class="section-card">
 
-  <div style="width:80%;max-width:600px;font-size:11px;">
-    <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096970905406865412"
-         style="text-decoration:none;color:inherit;line-height:0;">
-        DAY6 11th Anniversary Live🥳<br>
-        11번째 생일맞이 홈파티 준비 완료!🏠✨<br><br>
-        잠시 후 시작되는 DAY6만의 특별한 홈파티에서<br>
-        My Day를 설레는 마음으로 기다리고 있을게요(*˘▿˘✽)<br><br>
-        📍26.09.07 (MON) 09:07 PM (KST)
-      </a><br>
+  <div style="width:90%;max-width:650px;margin:0 auto 10px;font-size:11px;line-height:1.5;">
 
-      📺
-      <a href="https://youtube.com/live/etcA8OjEV6s"
-         style="text-decoration:none;color:inherit;line-height:0;">
-        <span style="color:#0099ff;">youtu.be/live/etcA8OjEV6s</span>
-      </a>
-    </div>
+    <a
+      href="https://x.com/day6official/status/2096970905406865412"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
+
+      DAY6 11th Anniversary Live🥳<br>
+      11번째 생일맞이 홈파티 준비 완료!🏠✨<br><br>
+
+      잠시 후 시작되는 DAY6만의 특별한 홈파티에서<br>
+      My Day를 설레는 마음으로 기다리고 있을게요(*˘▿˘✽)<br><br>
+
+      📍26.09.07 (MON) 09:07 PM (KST)
+
+    </a>
+
   </div>
 
-  <a href="https://youtube.com/live/etcA8OjEV6s"
-     style="text-decoration:none;color:inherit;line-height:0;">
-    <img
-      alt=""
-      src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&amp;name=large"
-      style="width:63%;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-  </a>
+  <div style="text-align:center;margin-bottom:8px;">
+
+    <a
+      href="https://youtube.com/live/etcA8OjEV6s"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:#0099ff;font-size:11px;">
+
+      youtu.be/live/etcA8OjEV6s
+
+    </a>
+
+  </div>
+
+  <img
+    src="https://pbs.twimg.com/media/HRm-9XYakAA68UV?format=jpg&name=large"
+    style="width:63%;height:auto;display:block;margin:0 auto;border-radius:0.7vw;">
 
 </div>
 
 
-<div class="section-title">[ #DAY6_BEHIND ]</div>
+<!-- [ #DAY6_BEHIND ] -->
+
+<div class="section-title">
+  [ #DAY6_BEHIND ]
+</div>
 
 <div class="section-card">
 
-  <div style="width:80%;max-width:600px;font-size:11px;">
-    <div style="padding:2px 3px;">
-      <a href="https://x.com/day6official/status/2096970905406865412"
-         style="text-decoration:none;color:inherit;line-height:0;">
-        DAY6의 11번째 생일맞이 홈파티<br><br>
-        &lt;Welcome to the Party&gt;에서<br>
-        다시금 열어 본 선물같은 시간들 💝<br>
-        그 시간들에 항상 옆에 있어줘서 고마워요<br>
-        앞으로도 함께 걸어가 줘요 My Day( ˘ ³˘) ❤️
-      </a>
-    </div>
+  <div style="width:90%;max-width:650px;margin:0 auto 10px;font-size:11px;line-height:1.5;">
+
+    <a
+      href="https://x.com/day6official/status/2096970905406865412"
+      target="_blank"
+      rel="noreferrer noopener"
+      style="text-decoration:none;color:rgb(51,51,51);">
+
+      DAY6의 11번째 생일맞이 홈파티<br><br>
+
+      &lt;Welcome to the Party&gt;에서<br>
+      다시금 열어 본 선물같은 시간들 💝<br>
+      그 시간들에 항상 옆에 있어줘서 고마워요<br>
+      앞으로도 함께 걸어가 줘요 My Day( ˘ ³˘) ❤️
+
+    </a>
+
   </div>
 
-  <a href="https://youtube.com/shorts/ASSRx03COS0"
-     style="text-decoration:none;color:inherit;line-height:0;">
-    <img
-      alt=""
-      src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&amp;name=4096x4096"
-      style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-  </a>
+  <div style="width:100%;overflow-x:auto;white-space:nowrap;text-align:center;">
 
-  <a href="https://youtube.com/shorts/ASSRx03COS0"
-     style="text-decoration:none;color:inherit;line-height:0;">
-    <img
-      alt=""
-      src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&amp;name=4096x4096"
-      style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
-  </a>
+    <a
+      href="https://youtube.com/shorts/ASSRx03COS0"
+      target="_blank"
+      rel="noreferrer noopener">
+
+      <img
+        src="https://pbs.twimg.com/media/HRnvSUiaEAEJNQF?format=jpg&name=4096x4096"
+        style="width:63%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+      <img
+        src="https://pbs.twimg.com/media/HRnvVVDasAA07Qf?format=jpg&name=4096x4096"
+        style="width:35%;height:auto;display:inline-block;vertical-align:top;border-radius:0.7vw;">
+
+    </a>
+
+  </div>
+
+</div>
+
 
 </div>
 
 
-<p>&nbsp;</p>
+<script>
+function setupVideoSlider(scrollId, titleId, titles){
+  const scroll = document.getElementById(scrollId);
+  const title = document.getElementById(titleId);
 
-</div>
+  if(!scroll || !title) return;
+
+  let timer;
+
+  scroll.addEventListener("scroll", function(){
+    clearTimeout(timer);
+
+    timer = setTimeout(function(){
+      const slides = scroll.querySelectorAll(".video-slide");
+
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      slides.forEach(function(slide, index){
+        const distance = Math.abs(
+          slide.offsetLeft - scroll.scrollLeft
+        );
+
+        if(distance < closestDistance){
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      title.textContent = titles[closestIndex];
+    }, 40);
+  });
+}
+
+
+setupVideoSlider(
+  "documentary-scroll",
+  "documentary-current-title",
+  [
+    "<DAY6: Time of Our Decade> Teaser",
+    "DAY6: Time of Our Decade"
+  ]
+);
+
+
+setupVideoSlider(
+  "desik-scroll",
+  "desik-current-title",
+  [
+    "Teaser",
+    "Ep.1",
+    "Ep.2"
+  ]
+);
+
+
+setupVideoSlider(
+  "liveclip-scroll",
+  "liveclip-current-title",
+  [
+    "Welcome to the Show",
+    "Congratulations",
+    "INSIDE OUT",
+    "꿈의 버스",
+    "한 페이지가 될 수 있게"
+  ]
+);
+</script>
 
 </body>
 </html>
