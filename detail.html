@@ -107,7 +107,20 @@ img{
   justify-content:center;
   text-align:center;
 }
+.detail-back::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.16);
+  z-index:0;
+}
 
+.detail-title,
+.detail-text,
+.detail-sns{
+  position:relative;
+  z-index:1;
+}
 .detail-title{
   width:100%;
   color:#fff;
