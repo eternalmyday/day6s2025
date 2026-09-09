@@ -6,10 +6,45 @@
 <meta name="format-detection" content="telephone=no">
 <title>DAY6</title>
 <style>
-html{-webkit-text-size-adjust:100%;}
-body{margin:0;padding:0;}
-img{max-width:100%;}
-div[style*="overflow-x:auto"]{-webkit-overflow-scrolling:touch;}
+html{
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:#f3f3f3;
+}
+
+img{
+  max-width:100%;
+}
+
+div[style*="overflow-x:auto"]{
+  -webkit-overflow-scrolling:touch;
+}
+
+.mobile-page{
+  width:100%;
+  max-width:480px;
+  min-height:100vh;
+  margin:0 auto;
+  padding:0 12px;
+  box-sizing:border-box;
+  background:#fff;
+}
+
+.mobile-page > table{
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 auto;
+}
+
+@media(max-width:480px){
+  .mobile-page{
+    padding:0 10px;
+  }
+}
 </style>
 </head>
 <body>
